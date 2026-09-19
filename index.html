@@ -3,29 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luisa Fernanda Garcés García · Psicóloga</title>
-<meta name="description" content="Psicóloga especialista en TDAH en adultos, TLP, TOC, trastornos adaptativos, víctimas de violencia, ansiedad y depresión. Atención presencial y virtual en Medellín. Luisa Fernanda Garcés García — TP 174366">
-<meta property="og:title" content="Luisa Fernanda Garcés García · Psicóloga">
-<meta property="og:description" content="Un espacio seguro para trabajar tu TDAH, TLP, TOC, ansiedad, depresión y trastornos adaptativos.">
-<meta name="theme-color" content="#fadae1">
+<title>Luisa Garcés · Psicóloga</title>
+<meta name="description" content="Psicóloga clínica especializada en TDAH en adultos, TLP, TOC, trastornos adaptativos, víctimas de violencia, ansiedad y depresión. Terapia cognitivo-conductual con mindfulness, presencial y virtual, en español e inglés. Luisa Garcés — TP 174366">
+<meta property="og:title" content="Luisa Garcés · Psicóloga">
+<meta property="og:description" content="Un espacio seguro. Un proceso con rumbo.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" type="image/png" href="icon-192.png">
 <style>
   :root{
-    --pink:#fadae1;
-    --pink-dark:#f2b8c6;
-    --mint:#dcefe8;
-    --ink:#2b2420;
-    --ink-soft:#6b5f58;
-    --cream:#fffaf6;
-    --card:#ffffff;
-    --line:#f0e2e0;
-    --accent:#c9748a;
+    /* Paleta de marca — regla 60-30-10 */
+    --blanco:#ffffff;
+    --cafe:#4B4542;       /* 30% — jerarquía, títulos, texto */
+    --cafe-oscuro:#2f2b2d; /* fondos oscuros (versión negativa del logo) */
+    --rosa:#cd8e9d;        /* 10% — símbolo y acentos */
+    --rosa-suave:#e6c3cc;
+    --gris-texto:#3d3835;  /* texto de lectura extensa, contraste reforzado */
+    --linea:#ece4e1;
+    --blanco-hueso:#faf7f6;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
     font-family:'Segoe UI', system-ui, -apple-system, sans-serif;
-    background:var(--cream);
-    color:var(--ink);
-    line-height:1.6;
+    background:var(--blanco);
+    color:var(--gris-texto);
+    line-height:1.65;
   }
   a{color:inherit;text-decoration:none;}
   img{max-width:100%;display:block;}
@@ -34,172 +35,187 @@
   /* NAV */
   nav{
     position:sticky;top:0;z-index:50;
-    background:rgba(255,250,246,0.92);
+    background:rgba(255,255,255,0.95);
     backdrop-filter:blur(8px);
-    border-bottom:1px solid var(--line);
+    border-bottom:1px solid var(--linea);
   }
   .nav-inner{
-    max-width:1080px;margin:0 auto;padding:16px 24px;
+    max-width:1080px;margin:0 auto;padding:14px 24px;
     display:flex;align-items:center;justify-content:space-between;
   }
-  .brand{font-weight:700;font-size:1.05rem;}
-  .nav-links{display:flex;gap:28px;font-size:0.95rem;}
-  .nav-links a:hover{color:var(--accent);}
+  .brand-logo{height:40px;width:auto;}
+  .nav-links{display:flex;align-items:center;gap:28px;font-size:0.95rem;}
+  .nav-links a:not(.cta-btn):hover{color:var(--rosa);}
   .cta-btn{
-    background:var(--ink);color:#fff;padding:10px 20px;border-radius:30px;
+    background:var(--cafe);color:#fff;padding:10px 20px;border-radius:30px;
     font-size:0.9rem;font-weight:600;white-space:nowrap;
   }
-  .cta-btn:hover{background:var(--accent);}
-  .menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;}
+  .cta-btn:hover{background:var(--rosa);}
+  .menu-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--cafe);}
 
   @media (max-width:760px){
     .nav-links{
       display:none;position:absolute;top:100%;left:0;right:0;
-      background:var(--cream);flex-direction:column;padding:20px 24px;
-      border-bottom:1px solid var(--line);gap:16px;
+      background:var(--blanco);flex-direction:column;align-items:flex-start;padding:20px 24px;
+      border-bottom:1px solid var(--linea);gap:16px;
     }
     .nav-links.open{display:flex;}
     .menu-toggle{display:block;}
   }
 
-  /* HERO */
+  /* HERO — fondo blanco, acentos mínimos de rosa */
   .hero{
-    padding:80px 0 60px;
+    padding:64px 0 56px;
     text-align:center;
-    background:linear-gradient(180deg, var(--pink) 0%, var(--cream) 100%);
   }
+  .hero-logo{max-width:420px;width:80%;margin:0 auto 32px;}
   .badge{
-    display:inline-block;background:#fff;color:var(--accent);
+    display:inline-block;background:var(--blanco-hueso);color:var(--rosa);
     padding:6px 16px;border-radius:30px;font-size:0.82rem;font-weight:600;
-    margin-bottom:24px;border:1px solid var(--pink-dark);
+    margin-bottom:20px;border:1px solid var(--rosa-suave);
   }
-  .hero h1{
-    font-size:2.6rem;font-weight:800;margin-bottom:18px;line-height:1.15;
+  .hero .slogan{
+    font-size:1.5rem;font-weight:700;color:var(--cafe);margin-bottom:14px;line-height:1.3;
   }
   .hero p.tagline{
-    font-size:1.15rem;color:var(--ink-soft);max-width:600px;margin:0 auto 32px;
+    font-size:1.05rem;color:var(--gris-texto);max-width:600px;margin:0 auto 32px;
   }
   .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:32px;}
   .btn-primary{
-    background:var(--ink);color:#fff;padding:14px 28px;border-radius:30px;font-weight:600;
+    background:var(--cafe);color:#fff;padding:14px 28px;border-radius:30px;font-weight:600;
   }
-  .btn-primary:hover{background:var(--accent);}
+  .btn-primary:hover{background:var(--rosa);}
   .btn-secondary{
-    background:#fff;color:var(--ink);padding:14px 28px;border-radius:30px;font-weight:600;
-    border:1px solid var(--pink-dark);
+    background:#fff;color:var(--cafe);padding:14px 28px;border-radius:30px;font-weight:600;
+    border:1px solid var(--linea);
   }
-  .btn-secondary:hover{border-color:var(--accent);}
+  .btn-secondary:hover{border-color:var(--rosa);color:var(--rosa);}
   .hero-facts{
-    display:flex;gap:28px;justify-content:center;flex-wrap:wrap;
-    font-size:0.9rem;color:var(--ink-soft);
+    display:flex;gap:24px;justify-content:center;flex-wrap:wrap;
+    font-size:0.88rem;color:var(--gris-texto);
   }
 
-  section{padding:70px 0;}
-  .eyebrow{color:var(--accent);font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;text-align:center;}
-  h2.section-title{font-size:2rem;text-align:center;margin-bottom:14px;font-weight:800;}
-  p.section-sub{text-align:center;color:var(--ink-soft);max-width:560px;margin:0 auto 48px;}
+  section{padding:64px 0;}
+  .eyebrow{color:var(--rosa);font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px;text-align:center;}
+  h2.section-title{font-size:1.9rem;text-align:center;margin-bottom:14px;font-weight:800;color:var(--cafe);}
+  p.section-sub{text-align:center;color:var(--gris-texto);max-width:580px;margin:0 auto 48px;}
 
-  /* SPECIALTIES */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  /* SPECIALTIES — tarjetas blancas, borde sutil, sin fondos de color */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   @media (max-width:760px){.grid{grid-template-columns:1fr;}}
   .card{
-    background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;
-    transition:transform 0.15s, box-shadow 0.15s;
+    background:#fff;border:1px solid var(--linea);border-radius:16px;padding:26px;
+    transition:transform 0.15s, box-shadow 0.15s, border-color 0.15s;
   }
-  .card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,0.06);}
-  .card .icon{font-size:1.8rem;margin-bottom:14px;}
-  .card h3{font-size:1.1rem;margin-bottom:8px;font-weight:700;}
-  .card p{font-size:0.92rem;color:var(--ink-soft);}
+  .card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(75,69,66,0.08);border-color:var(--rosa-suave);}
+  .card .icon{font-size:1.6rem;margin-bottom:12px;}
+  .card h3{font-size:1.05rem;margin-bottom:8px;font-weight:700;color:var(--cafe);}
+  .card p{font-size:0.9rem;color:var(--gris-texto);}
 
   /* SOBRE MI */
-  .about{background:var(--mint);}
-  .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:48px;align-items:center;}
+  .about-grid{display:grid;grid-template-columns:0.8fr 1.2fr;gap:44px;align-items:center;}
   @media (max-width:760px){.about-grid{grid-template-columns:1fr;}}
   .about-photo{
-    border-radius:20px;overflow:hidden;aspect-ratio:1/1;background:#fff;
-    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+    border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:var(--blanco-hueso);
+    border:1px solid var(--linea);
   }
   .about-photo img{width:100%;height:100%;object-fit:cover;}
-  .quote{font-size:1.25rem;font-style:italic;font-weight:600;margin-bottom:18px;}
-  .about p{margin-bottom:14px;color:var(--ink-soft);}
-  .about strong{color:var(--ink);}
-  .tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;}
-  .tag{background:#fff;padding:6px 14px;border-radius:20px;font-size:0.82rem;font-weight:600;color:var(--accent);}
+  .quote{font-size:1.2rem;font-style:italic;font-weight:600;margin-bottom:16px;color:var(--cafe);}
+  .about p{margin-bottom:14px;color:var(--gris-texto);}
+  .about strong{color:var(--cafe);}
+  .tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px;}
+  .tag{background:var(--blanco-hueso);padding:6px 14px;border-radius:20px;font-size:0.8rem;font-weight:600;color:var(--rosa);border:1px solid var(--rosa-suave);}
+
+  /* DIFERENCIADORES — formato pregunta/respuesta en primera persona */
+  .diff-item{border-left:3px solid var(--rosa-suave);padding:6px 0 6px 20px;margin-bottom:28px;}
+  .diff-item h4{font-size:0.95rem;color:var(--rosa);font-weight:700;margin-bottom:8px;}
+  .diff-item p{font-size:0.95rem;color:var(--gris-texto);font-style:italic;}
 
   /* PROCESO */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
   @media (max-width:760px){.steps{grid-template-columns:1fr;}}
   .step{text-align:center;}
   .step .num{
-    width:44px;height:44px;border-radius:50%;background:var(--ink);color:#fff;
+    width:42px;height:42px;border-radius:50%;background:var(--cafe);color:#fff;
     display:flex;align-items:center;justify-content:center;font-weight:700;
     margin:0 auto 14px;
   }
-  .step h4{margin-bottom:8px;font-size:1rem;}
-  .step p{font-size:0.88rem;color:var(--ink-soft);}
+  .step h4{margin-bottom:8px;font-size:0.98rem;color:var(--cafe);}
+  .step p{font-size:0.86rem;color:var(--gris-texto);}
 
-  /* TARIFAS */
-  .tarifas{background:var(--mint);}
-  .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-  @media (max-width:760px){.pricing{grid-template-columns:1fr;}}
+  /* TARIFAS — simplificado, sin paquetes */
+  .pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:680px;margin:0 auto;}
+  @media (max-width:600px){.pricing{grid-template-columns:1fr;}}
   .price-card{
-    background:#fff;border-radius:18px;padding:32px 26px;position:relative;
-    border:1px solid var(--line);
+    background:#fff;border-radius:16px;padding:30px 26px;
+    border:1px solid var(--linea);text-align:center;
   }
-  .price-card.featured{border:2px solid var(--accent);}
-  .price-card .flag{
-    position:absolute;top:-12px;left:26px;background:var(--accent);color:#fff;
-    font-size:0.75rem;padding:4px 12px;border-radius:20px;font-weight:600;
+  .price-card.featured{border:2px solid var(--rosa);}
+  .price-card h3{font-size:1rem;margin-bottom:6px;color:var(--cafe);}
+  .price-card .price{font-size:2.1rem;font-weight:800;margin:8px 0 2px;color:var(--cafe);}
+  .price-card .price-desc{font-size:0.85rem;color:var(--gris-texto);margin-bottom:14px;}
+  .price-note{font-size:0.8rem;color:var(--gris-texto);}
+  .price-collateral{
+    max-width:680px;margin:28px auto 0;background:var(--blanco-hueso);border-radius:14px;
+    padding:20px 24px;font-size:0.88rem;color:var(--gris-texto);border:1px solid var(--linea);
   }
-  .price-card h3{font-size:1rem;margin-bottom:6px;}
-  .price-card .price{font-size:2rem;font-weight:800;margin:8px 0 2px;}
-  .price-card .price-desc{font-size:0.82rem;color:var(--ink-soft);margin-bottom:18px;}
-  .price-card ul{list-style:none;margin-bottom:14px;}
-  .price-card li{font-size:0.88rem;margin-bottom:8px;color:var(--ink-soft);}
-  .price-note{font-size:0.78rem;color:var(--ink-soft);font-style:italic;}
+  .price-collateral strong{color:var(--cafe);}
 
   /* BLOG */
-  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
   @media (max-width:760px){.blog-grid{grid-template-columns:1fr;}}
   .post-card{
-    background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+    background:#fff;border:1px solid var(--linea);border-radius:16px;overflow:hidden;
     display:flex;flex-direction:column;
   }
   .post-img{
-    height:150px;display:flex;align-items:center;justify-content:center;font-size:2.4rem;
+    height:130px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;
+    background:var(--blanco-hueso);
   }
-  .post-body{padding:22px;flex:1;display:flex;flex-direction:column;}
-  .post-tag{font-size:0.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;}
-  .post-body h3{font-size:1.05rem;margin-bottom:10px;line-height:1.3;}
-  .post-body p{font-size:0.88rem;color:var(--ink-soft);margin-bottom:16px;flex:1;}
-  .post-date{font-size:0.78rem;color:var(--ink-soft);}
+  .post-body{padding:20px;flex:1;display:flex;flex-direction:column;}
+  .post-tag{font-size:0.74rem;font-weight:700;color:var(--rosa);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;}
+  .post-body h3{font-size:1rem;margin-bottom:10px;line-height:1.3;color:var(--cafe);}
+  .post-body p{font-size:0.86rem;color:var(--gris-texto);margin-bottom:14px;flex:1;}
+  .post-date{font-size:0.76rem;color:#8a8079;}
 
   /* FAQ */
-  .faq-item{border-bottom:1px solid var(--line);padding:20px 0;}
+  .faq-item{border-bottom:1px solid var(--linea);padding:18px 0;}
   .faq-q{
     display:flex;justify-content:space-between;align-items:center;cursor:pointer;
-    font-weight:600;font-size:1rem;
+    font-weight:600;font-size:0.98rem;color:var(--cafe);
   }
-  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.25s ease;font-size:0.92rem;color:var(--ink-soft);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height 0.25s ease;font-size:0.9rem;color:var(--gris-texto);}
   .faq-a p{padding-top:12px;}
-  .faq-item.open .faq-a{max-height:220px;}
-  .faq-plus{transition:transform 0.2s;font-size:1.3rem;color:var(--accent);}
+  .faq-item.open .faq-a{max-height:240px;}
+  .faq-plus{transition:transform 0.2s;font-size:1.25rem;color:var(--rosa);}
   .faq-item.open .faq-plus{transform:rotate(45deg);}
 
-  /* CTA FINAL */
-  .final-cta{text-align:center;background:var(--pink);}
-  .final-cta h2{font-size:1.9rem;margin-bottom:14px;font-weight:800;}
-  .final-cta p{color:var(--ink-soft);max-width:480px;margin:0 auto 30px;}
+  /* Nota límites digitales */
+  .limits-note{
+    max-width:720px;margin:0 auto;background:var(--blanco-hueso);border:1px solid var(--linea);
+    border-radius:14px;padding:22px 26px;font-size:0.88rem;color:var(--gris-texto);
+  }
+  .limits-note strong{color:var(--cafe);}
 
-  footer{padding:40px 0;text-align:center;font-size:0.85rem;color:var(--ink-soft);}
-  footer .foot-links{display:flex;gap:20px;justify-content:center;margin:14px 0;flex-wrap:wrap;}
+  /* CTA FINAL — única sección con fondo café oscuro (parte del 30%, no rosa) */
+  .final-cta{text-align:center;background:var(--cafe-oscuro);color:#fff;}
+  .final-cta h2{font-size:1.7rem;margin-bottom:14px;font-weight:800;color:#fff;}
+  .final-cta p{color:#e6ded9;max-width:480px;margin:0 auto 30px;}
+  .final-cta .btn-primary{background:var(--rosa);}
+  .final-cta .btn-primary:hover{background:#fff;color:var(--cafe-oscuro);}
+
+  footer{padding:40px 0;text-align:center;background:var(--cafe-oscuro);color:#cfc6c1;}
+  footer .foot-logo{height:70px;width:auto;margin:0 auto 18px;}
+  footer .foot-links{display:flex;gap:20px;justify-content:center;margin:14px 0;flex-wrap:wrap;font-size:0.9rem;}
+  footer .foot-links a:hover{color:var(--rosa);}
+  footer .foot-fine{font-size:0.78rem;color:#a99f9a;margin-top:8px;}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="nav-inner">
-    <a href="#hero" class="brand">Luisa Fernanda Garcés</a>
+    <a href="#hero"><img src="logo-header.png" alt="Luisa Garcés · Psicóloga" class="brand-logo"></a>
     <div class="nav-links" id="navLinks">
       <a href="#areas">Especialidades</a>
       <a href="#sobre">Sobre mí</a>
@@ -214,8 +230,8 @@
 <section class="hero" id="hero">
   <div class="container">
     <span class="badge">Aceptando nuevos pacientes</span>
-    <h1>Luisa Fernanda<br>Garcés García</h1>
-    <p class="tagline">Un espacio seguro para trabajar tu TDAH, TLP, TOC, ansiedad, depresión y trastornos adaptativos. Presencial y virtual.</p>
+    <p class="slogan">Un espacio seguro. Un proceso con rumbo.</p>
+    <p class="tagline">Terapia cognitivo-conductual con mindfulness para adultos que viven con TDAH, TLP, TOC, ansiedad, depresión, trastornos adaptativos o dificultades de pareja. Presencial y virtual, en español e inglés.</p>
     <div class="hero-cta">
       <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-primary">Agendar primera sesión</a>
       <a href="#blog" class="btn-secondary">Leer el blog</a>
@@ -224,6 +240,7 @@
       <span>🔒 Confidencialidad total</span>
       <span>📍 Medellín + Virtual</span>
       <span>🎓 Psicóloga · TP 174366</span>
+      <span>🌐 Español · English</span>
     </div>
   </div>
 </section>
@@ -232,7 +249,7 @@
   <div class="container">
     <div class="eyebrow">Especialidades</div>
     <h2 class="section-title">¿En qué te puedo acompañar?</h2>
-    <p class="section-sub">Trabajo con adultos que quieren entenderse mejor y construir una vida más en paz con ellos mismos.</p>
+    <p class="section-sub">Acompaño a adultos, desde los 20 años, con un proceso claro, estructurado y basado en evidencia.</p>
     <div class="grid">
       <div class="card">
         <div class="icon">🧠</div>
@@ -286,22 +303,45 @@
 <section class="about" id="sobre">
   <div class="container about-grid">
     <div class="about-photo">
-      <img src="foto-perfil.jpg" alt="Luisa Fernanda Garcés García, psicóloga">
+      <img src="foto-perfil.jpg" alt="Luisa Garcés, psicóloga">
     </div>
     <div>
       <div class="eyebrow" style="text-align:left">Sobre mí</div>
-      <p class="quote">"Creo que todas las personas merecen un espacio donde ser vistas sin filtros."</p>
-      <p>Soy psicóloga con formación en <strong>terapia cognitivo-conductual y mindfulness</strong>, especializada en TDAH en adultos, TLP, TOC, trastornos adaptativos, acompañamiento a víctimas de violencia, ansiedad y depresión. Acompaño adultos que quieren entenderse mejor y vivir de una forma que realmente les haga sentido.</p>
-      <p>Mi enfoque es <strong>directo, empático y basado en evidencia</strong>. No creo en la terapia interminable ni en el trabajo sin dirección — me importa que veas resultados reales en tu vida cotidiana.</p>
-      <p>Atiendo en <strong>Medellín de forma presencial</strong> y también en modalidad <strong>completamente virtual</strong> para todo Colombia.</p>
+      <p class="quote">"Un espacio claro y estructurado para comprender lo que te pasa y desarrollar nuevas herramientas."</p>
+      <p>Soy psicóloga clínica y acompaño procesos de comprensión y cambio a través de la <strong>terapia cognitivo-conductual, integrando herramientas de mindfulness</strong>: un enfoque estructurado, colaborativo y basado en evidencia, que ayuda a identificar qué mantiene un malestar y a desarrollar recursos concretos frente a él.</p>
+      <p>Tengo experiencia en <strong>contextos hospitalarios de alta exigencia clínica</strong> (interconsulta, enlace y valoración de riesgo) y en consulta privada — una doble mirada que aporta criterio para el manejo de casos complejos.</p>
+      <p>Atiendo en <strong>Medellín de forma presencial</strong> y también en modalidad <strong>completamente virtual</strong> para todo Colombia, en <strong>español e inglés</strong>.</p>
       <div class="tags">
         <span class="tag">TCC</span>
         <span class="tag">Mindfulness</span>
-        <span class="tag">DBT</span>
-        <span class="tag">ERP</span>
-        <span class="tag">Adultos</span>
+        <span class="tag">Adultos 20+</span>
         <span class="tag">Presencial · Virtual</span>
+        <span class="tag">Español · English</span>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="diferenciadores">
+  <div class="container" style="max-width:760px">
+    <div class="eyebrow">En mis propias palabras</div>
+    <h2 class="section-title">¿Qué es distinto en mi forma de trabajar?</h2>
+
+    <div class="diff-item">
+      <h4>¿Qué te dicen los pacientes que no encontraron en otro psicólogo?</h4>
+      <p>"Muchos llegan diciéndome que en otros procesos no les explicaban qué estaba pasando ni hacia dónde iba la terapia, que no se sentían escuchados y que se sacaban conclusiones sin haberlos oído lo suficiente. Con el tiempo me dicen que se sienten muy comprendidos y que los ayudo a entenderse a sí mismos."</p>
+    </div>
+    <div class="diff-item">
+      <h4>¿Qué es distinto en tu forma de trabajar?</h4>
+      <p>"Trabajo con un proceso explicado y visible: sabes qué estamos haciendo y por qué. Después de cada sesión recibes un resumen escrito en lenguaje cercano, con los temas trabajados, tus avances, las tareas para la casa y los acuerdos. Llevo continuidad rigurosa entre sesiones."</p>
+    </div>
+    <div class="diff-item">
+      <h4>¿Qué habilidad concreta te dio el hospital?</h4>
+      <p>"En el hospital aprendí que explicarte el proceso que llevas es necesario para que te regules. No asumo que sabes lo que está pasando: me aseguro de que lo entendiste y valido muchísimo. Tengo una doble mirada que pocos psicólogos combinan: conozco el extremo agudo del hospital y el proceso continuo del consultorio."</p>
+    </div>
+    <div class="diff-item">
+      <h4>¿Algo en otro idioma o formato que no es habitual?</h4>
+      <p>"Atiendo en inglés (certificación TOEIC 850), y hay poca oferta de psicología clínica en inglés en Medellín. Mi formato de proceso documentado, con resúmenes por sesión y tareas claras, tampoco es lo habitual en consulta privada."</p>
     </div>
   </div>
 </section>
@@ -314,71 +354,49 @@
     <div class="steps">
       <div class="step">
         <div class="num">1</div>
-        <h4>Me escribís por WhatsApp</h4>
-        <p>Te respondo el mismo día. Coordinamos horario y modalidad según lo que mejor te quede.</p>
+        <h4>Me escribes por WhatsApp</h4>
+        <p>Te respondo en el tiempo habitual de respuesta. Coordinamos horario y modalidad según lo que mejor te quede.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
-        <h4>Completás el formulario</h4>
+        <h4>Completas el formulario</h4>
         <p>Un breve formulario confidencial que me ayuda a preparar tu primera sesión. Solo toma 5 minutos.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
         <h4>Primera sesión</h4>
-        <p>Nos conocemos, me contás lo que te trae y hacemos una evaluación inicial. Sin compromiso, sin presión.</p>
+        <p>Nos conocemos, me cuentas lo que te trae y hacemos una evaluación inicial. Sin compromiso, sin presión.</p>
       </div>
       <div class="step">
         <div class="num">4</div>
         <h4>Construimos tu proceso</h4>
-        <p>Definimos juntos un plan terapéutico real, con objetivos claros y una frecuencia que se adapte a tu ritmo.</p>
+        <p>Definimos juntos un plan terapéutico real, con objetivos claros y resúmenes escritos después de cada sesión.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="tarifas" id="tarifas">
+<section id="tarifas">
   <div class="container">
     <div class="eyebrow">Tarifas</div>
     <h2 class="section-title">Inversión en tu bienestar</h2>
-    <p class="section-sub">Precios claros, sin sorpresas. Si tenés una situación económica especial, hablemos — siempre hay forma de encontrar un camino.</p>
+    <p class="section-sub">Precios claros, sin sorpresas ni paquetes. Si tienes una situación económica especial, hablemos — siempre hay forma de encontrar un camino.</p>
     <div class="pricing">
-      <div class="price-card">
-        <h3>Primera sesión</h3>
-        <div class="price">$80k</div>
-        <div class="price-desc">60 minutos · Evaluación inicial</div>
-        <ul>
-          <li>✦ Nos conocemos</li>
-          <li>✦ Evaluación del motivo</li>
-          <li>✦ Plan inicial de trabajo</li>
-          <li>✦ Sin compromiso</li>
-        </ul>
-        <p class="price-note">Ideal para ver si hay conexión terapéutica.</p>
-      </div>
       <div class="price-card featured">
-        <span class="flag">🌸 Más elegida</span>
-        <h3>Pack mensual</h3>
-        <div class="price">$420k</div>
-        <div class="price-desc">4 sesiones · 1 por semana</div>
-        <ul>
-          <li>✦ Todo lo del plan individual</li>
-          <li>✦ Plan terapéutico mensual</li>
-          <li>✦ Seguimiento entre sesiones</li>
-          <li>✦ Descuento de $60k</li>
-        </ul>
-        <p class="price-note">Precio de referencia. Consúltame.</p>
+        <h3>Consulta individual</h3>
+        <div class="price">$80.000</div>
+        <div class="price-desc">50 minutos · Presencial o virtual</div>
+        <p class="price-note">Incluye evaluación, intervención y resumen escrito después de cada sesión.</p>
       </div>
       <div class="price-card">
-        <h3>Consulta individual</h3>
-        <div class="price">$120k</div>
-        <div class="price-desc">50 minutos · Sesión estándar</div>
-        <ul>
-          <li>✦ Evaluación e intervención</li>
-          <li>✦ Registro de progreso</li>
-          <li>✦ Recursos entre sesiones</li>
-          <li>✦ Presencial o virtual</li>
-        </ul>
-        <p class="price-note">Precio de referencia. Consúltame.</p>
+        <h3>Terapia de pareja</h3>
+        <div class="price">$120.000</div>
+        <div class="price-desc">60-75 minutos · Presencial o virtual</div>
+        <p class="price-note">Sesión más extensa, para dos personas trabajando juntas.</p>
       </div>
+    </div>
+    <div class="price-collateral">
+      <strong>¿Vienes a tu sesión individual y quieres que tu pareja participe puntualmente?</strong> Eso se llama una <em>sesión colateral</em>: tu pareja participa como apoyo para tu proceso, no como una sesión de pareja formal. Lo que has compartido en sesiones individuales sigue siendo confidencial. Esta sesión se cobra igual que la terapia de pareja ($120.000) por el tiempo y la complejidad adicional.
     </div>
   </div>
 </section>
@@ -391,35 +409,45 @@
     <div class="blog-grid">
 
       <div class="post-card">
-        <div class="post-img" style="background:var(--pink)">🧠</div>
+        <div class="post-img">🧠</div>
         <div class="post-body">
           <div class="post-tag">TDAH</div>
           <h3>3 señales de TDAH en adultos que casi nadie relaciona con TDAH</h3>
-          <p>Procrastinar no siempre es "pereza", y la desorganización crónica no siempre es falta de disciplina. Te cuento qué señales suelen pasar desapercibidas.</p>
+          <p>Procrastinar no siempre es "pereza", y la desorganización crónica no siempre es falta de disciplina.</p>
           <div class="post-date">Próximamente</div>
         </div>
       </div>
 
       <div class="post-card">
-        <div class="post-img" style="background:var(--mint)">🧩</div>
+        <div class="post-img">🧩</div>
         <div class="post-body">
           <div class="post-tag">TLP</div>
           <h3>Trastorno Límite de la Personalidad: separar el mito del diagnóstico</h3>
-          <p>El TLP es uno de los diagnósticos más estigmatizados en salud mental. Aquí te explico qué es realmente y por qué sí tiene tratamiento efectivo.</p>
+          <p>El TLP es uno de los diagnósticos más estigmatizados en salud mental. Aquí te explico qué es realmente.</p>
           <div class="post-date">Próximamente</div>
         </div>
       </div>
 
       <div class="post-card">
-        <div class="post-img" style="background:var(--pink-dark)">🌊</div>
+        <div class="post-img">🌊</div>
         <div class="post-body">
           <div class="post-tag">Trastornos adaptativos</div>
           <h3>¿Por qué no me siento bien desde que pasó "eso"?</h3>
-          <p>Una separación, un cambio de trabajo, una mudanza. A veces no es "solo estrés" — puede ser un trastorno adaptativo, y tiene nombre y manejo.</p>
+          <p>Una separación, un cambio de trabajo, una mudanza. A veces no es "solo estrés" — puede ser un trastorno adaptativo.</p>
           <div class="post-date">Próximamente</div>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="limites">
+  <div class="container" style="max-width:760px">
+    <div class="eyebrow">Comunicación digital</div>
+    <h2 class="section-title">Cómo uso WhatsApp y mensajería</h2>
+    <div class="limits-note">
+      Los canales de mensajería se usan para coordinación, información administrativa y seguimiento previamente acordado. <strong>No sustituyen la atención en sesión ni constituyen un servicio de emergencia.</strong> No hago diagnósticos por chat ni atiendo crisis exclusivamente por WhatsApp. Ante una situación de riesgo inmediato, acude a los servicios de urgencias o activa la red local de emergencias — yo te acompaño en la consulta, pero una crisis necesita atención presencial urgente.
     </div>
   </div>
 </section>
@@ -431,7 +459,7 @@
 
     <div class="faq-item">
       <div class="faq-q">¿Cómo sé si realmente necesito terapia? <span class="faq-plus">+</span></div>
-      <div class="faq-a"><p>Si hay algo que te pesa, que se repite o que sientes que no podés manejar solo/a, eso ya es razón suficiente. No necesitás estar en crisis para venir. La terapia también es para crecer, conocerte y vivir mejor.</p></div>
+      <div class="faq-a"><p>Si hay algo que te pesa, que se repite o que sientes que no puedes manejar solo/a, eso ya es razón suficiente. No necesitas estar en crisis para venir. La terapia también es para crecer, conocerte y vivir mejor.</p></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">¿La terapia virtual funciona igual que la presencial? <span class="faq-plus">+</span></div>
@@ -439,37 +467,36 @@
     </div>
     <div class="faq-item">
       <div class="faq-q">¿Cuánto tiempo dura el proceso terapéutico? <span class="faq-plus">+</span></div>
-      <div class="faq-a"><p>Depende de cada persona y de lo que se quiera trabajar. Algunos procesos duran 3-4 meses con objetivos muy concretos. Otros son más largos. Lo definimos juntos desde el principio, con honestidad.</p></div>
+      <div class="faq-a"><p>Depende de cada persona y de lo que se quiera trabajar. Algunos procesos duran 3-4 meses con objetivos muy concretos. Otros son más largos. Lo definimos juntas desde el principio, con honestidad.</p></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">¿Es confidencial todo lo que hablo en sesión? <span class="faq-plus">+</span></div>
       <div class="faq-a"><p>Absolutamente. Estoy regida por el Código Ético del psicólogo colombiano. Lo que conversamos en sesión es completamente confidencial. Solo existen excepciones muy específicas por ley (riesgo de vida inminente).</p></div>
     </div>
     <div class="faq-item">
-      <div class="faq-q">¿Atendés niños o adolescentes? <span class="faq-plus">+</span></div>
-      <div class="faq-a"><p>Actualmente atiendo únicamente adultos (20 años en adelante). Si necesitás recomendación de un profesional para niños o adolescentes, con gusto te oriento.</p></div>
+      <div class="faq-q">¿Atiendes niños o adolescentes? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Actualmente atiendo únicamente adultos (20 años en adelante). Si necesitas recomendación de un profesional para niños o adolescentes, con gusto te oriento.</p></div>
     </div>
     <div class="faq-item">
       <div class="faq-q">¿Cómo son los pagos? <span class="faq-plus">+</span></div>
-      <div class="faq-a"><p>Acepto transferencia bancaria, Nequi y efectivo. El pago se realiza antes de la sesión. Si tenés una situación económica difícil, conversémoslo — la salud mental es una prioridad y buscamos soluciones.</p></div>
+      <div class="faq-a"><p>Acepto transferencia bancaria, Nequi y efectivo. El pago se realiza antes de la sesión. Si tienes una situación económica difícil, conversémoslo — la salud mental es una prioridad y buscamos soluciones.</p></div>
     </div>
   </div>
 </section>
 
 <section class="final-cta">
   <div class="container">
-    <div style="font-size:2rem;margin-bottom:10px">🌸</div>
     <h2>El primer paso es el más importante</h2>
-    <p>No tenés que tener todo claro para empezar. Solo necesitás querer algo diferente. Estoy aquí.</p>
+    <p>No tienes que tener todo claro para empezar. Solo necesitas querer algo diferente. Estoy aquí.</p>
     <div class="hero-cta">
-      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-primary">Escribime por WhatsApp</a>
+      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-primary">Escríbeme por WhatsApp</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <div>Luisa Fernanda Garcés García · Psicóloga</div>
+    <img src="logo-dark.png" alt="Luisa Garcés · Psicóloga" class="foot-logo">
     <div class="foot-links">
       <a href="#areas">Especialidades</a>
       <a href="#sobre">Sobre mí</a>
@@ -478,6 +505,7 @@
       <a href="https://wa.me/573246381485">WhatsApp</a>
     </div>
     <div>Medellín, Colombia · Presencial y virtual · TP 174366</div>
+    <div class="foot-fine">El contenido de este sitio es educativo y no reemplaza una evaluación clínica.</div>
   </div>
 </footer>
 
