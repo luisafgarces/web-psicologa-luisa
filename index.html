@@ -54,11 +54,10 @@
   }
 
   /* HERO — editorial, sin caja, tipografía como protagonista */
-  .hero{padding:70px 0 90px;}
-  .hero-grid{display:grid;grid-template-columns:1fr 0.72fr;gap:64px;align-items:end;}
-  @media (max-width:820px){.hero-grid{grid-template-columns:1fr;gap:36px;}}
+  .hero{padding:88px 0 90px;}
+  .hero-inner{max-width:660px;}
   .hero .kicker{font-size:0.8rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--rosa);margin-bottom:22px;}
-  .hero h1{font-family:var(--font-titulos);font-weight:500;font-size:2.9rem;color:var(--cafe);line-height:1.18;margin-bottom:24px;letter-spacing:-0.01em;}
+  .hero h1{font-family:var(--font-titulos);font-weight:500;font-size:3.1rem;color:var(--cafe);line-height:1.18;margin-bottom:24px;letter-spacing:-0.01em;}
   .hero h1 em{font-style:italic;color:var(--rosa);}
   .hero p.tagline{font-size:1.08rem;color:var(--gris-texto);max-width:480px;margin-bottom:34px;}
   .hero-cta{display:flex;gap:28px;align-items:center;flex-wrap:wrap;}
@@ -66,9 +65,6 @@
   .btn-primary:hover{background:var(--rosa);}
   .link-arrow{font-weight:600;font-size:0.92rem;color:var(--cafe);border-bottom:1px solid var(--cafe);padding-bottom:2px;}
   .link-arrow:hover{color:var(--rosa);border-color:var(--rosa);}
-  .hero-photo{aspect-ratio:3/4;overflow:hidden;}
-  .hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(0.92) contrast(1.02);}
-  @media (max-width:820px){.hero-photo{max-width:280px;}}
 
   .trust-line{
     border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
@@ -86,10 +82,11 @@
 
   /* SOBRE MI — asimétrico, sin caja de foto recortada en cuadro */
   .about{background:var(--rosa-fondo);}
-  .about-grid{display:grid;grid-template-columns:0.62fr 1fr;gap:60px;align-items:start;}
-  @media (max-width:760px){.about-grid{grid-template-columns:1fr;gap:32px;}}
-  .about-photo{aspect-ratio:4/5;overflow:hidden;}
-  .about-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(0.92);}
+  .about-grid{max-width:680px;margin:0 auto;}
+  .about-avatar{display:flex;align-items:center;gap:16px;margin-bottom:32px;}
+  .about-avatar img{width:56px;height:56px;border-radius:50%;object-fit:cover;filter:saturate(0.9);}
+  .about-avatar-name{font-family:var(--font-titulos);font-size:1.05rem;color:var(--cafe);font-weight:500;}
+  .about-avatar-role{font-size:0.8rem;color:var(--rosa);}
   .quote{font-family:var(--font-titulos);font-style:italic;font-size:1.4rem;font-weight:500;line-height:1.4;margin-bottom:24px;color:var(--cafe);}
   .about-body p{margin-bottom:16px;color:var(--gris-texto);font-size:0.98rem;}
   .about-body strong{color:var(--cafe);}
@@ -194,18 +191,13 @@
 
 <section class="hero" id="hero">
   <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">Psicóloga clínica · Medellín</div>
-        <h1>Un espacio para comprenderte<br>y recuperar <em>tu equilibrio</em>.</h1>
-        <p class="tagline">Terapia cognitivo-conductual con mindfulness para adultos: un proceso claro y estructurado, basado en evidencia, para entender qué te pasa y construir herramientas reales.</p>
-        <div class="hero-cta">
-          <a href="https://calendly.com/psicoluisafernandagarces/30min" target="_blank" rel="noopener" class="btn-primary">Agendar una primera sesión</a>
-          <a href="#sobre" class="link-arrow">Conocer mi enfoque</a>
-        </div>
-      </div>
-      <div class="hero-photo">
-        <img src="foto-perfil.jpg" alt="Luisa Garcés, psicóloga">
+    <div class="hero-inner">
+      <div class="kicker">Psicóloga clínica · Medellín</div>
+      <h1>Un espacio para comprenderte<br>y recuperar <em>tu equilibrio</em>.</h1>
+      <p class="tagline">Terapia cognitivo-conductual con mindfulness para adultos: un proceso claro y estructurado, basado en evidencia, para entender qué te pasa y construir herramientas reales.</p>
+      <div class="hero-cta">
+        <a href="https://calendly.com/psicoluisafernandagarces/30min" target="_blank" rel="noopener" class="btn-primary">Agendar una primera sesión</a>
+        <a href="#sobre" class="link-arrow">Conocer mi enfoque</a>
       </div>
     </div>
 
@@ -221,11 +213,14 @@
 
 <section class="about" id="sobre">
   <div class="container about-grid">
-    <div class="about-photo">
-      <img src="foto-perfil.jpg" alt="Luisa Garcés, psicóloga">
-    </div>
     <div class="about-body">
-      <div class="kicker">Sobre mí</div>
+      <div class="about-avatar">
+        <img src="foto-perfil.jpg" alt="Luisa Garcés, psicóloga">
+        <div>
+          <div class="about-avatar-name">Luisa Garcés</div>
+          <div class="about-avatar-role">Psicóloga clínica · TP 174366</div>
+        </div>
+      </div>
       <p class="quote">"Un espacio claro y estructurado para comprender lo que te pasa y desarrollar nuevas herramientas."</p>
       <p>Soy psicóloga clínica y acompaño procesos de comprensión y cambio a través de la <strong>terapia cognitivo-conductual, integrando herramientas de mindfulness</strong>: un enfoque estructurado, colaborativo y basado en evidencia.</p>
       <p>Tengo experiencia en <strong>contextos hospitalarios de alta exigencia clínica</strong> (interconsulta, enlace y valoración de riesgo) y en consulta privada — una doble mirada que aporta criterio para el manejo de casos complejos.</p>
