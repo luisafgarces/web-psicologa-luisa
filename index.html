@@ -106,10 +106,12 @@
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
   @media (max-width:760px){.grid{grid-template-columns:1fr;}}
   .card{
-    background:#fff;border:1px solid var(--linea);border-radius:16px;padding:26px;
-    transition:transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    background:linear-gradient(160deg, #fff 0%, var(--rosa-fondo) 130%);
+    border:none;border-radius:18px;padding:26px;
+    box-shadow:0 2px 14px rgba(75,69,66,0.05);
+    transition:transform 0.15s, box-shadow 0.15s;
   }
-  .card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(75,69,66,0.08);border-color:var(--rosa-suave);}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(205,142,157,0.15);}
   .card .icon{font-size:1.6rem;margin-bottom:12px;}
   .card h3{font-size:1.05rem;margin-bottom:8px;font-weight:700;color:var(--cafe);}
   .card p{font-size:0.9rem;color:var(--gris-texto);}
@@ -149,8 +151,10 @@
   .pricing{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:680px;margin:0 auto;}
   @media (max-width:600px){.pricing{grid-template-columns:1fr;}}
   .price-card{
-    background:#fff;border-radius:16px;padding:30px 26px;
-    border:1px solid var(--linea);text-align:center;
+    background:linear-gradient(160deg, #fff 0%, var(--rosa-fondo) 140%);
+    border-radius:18px;padding:30px 26px;
+    box-shadow:0 2px 14px rgba(75,69,66,0.05);
+    border:none;text-align:center;
   }
   .price-card.featured{border:2px solid var(--rosa);}
   .price-card h3{font-size:1rem;margin-bottom:6px;color:var(--cafe);}
@@ -167,12 +171,14 @@
   .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
   @media (max-width:760px){.blog-grid{grid-template-columns:1fr;}}
   .post-card{
-    background:#fff;border:1px solid var(--linea);border-radius:16px;overflow:hidden;
+    background:linear-gradient(160deg, #fff 0%, var(--rosa-fondo) 140%);
+    border:none;border-radius:18px;overflow:hidden;
+    box-shadow:0 2px 14px rgba(75,69,66,0.05);
     display:flex;flex-direction:column;
   }
   .post-img{
     height:130px;display:flex;align-items:center;justify-content:center;font-size:2.2rem;
-    background:var(--blanco-hueso);
+    background:var(--rosa-fondo);
   }
   .post-body{padding:20px;flex:1;display:flex;flex-direction:column;}
   .post-tag{font-size:0.74rem;font-weight:700;color:var(--rosa);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:8px;}
@@ -223,7 +229,7 @@
       <a href="#sobre">Sobre mí</a>
       <a href="#blog">Blog</a>
       <a href="#tarifas">Tarifas</a>
-      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="cta-btn">Agendar cita</a>
+      <a href="https://calendly.com/psicoluisafernandagarces/30min" target="_blank" rel="noopener" class="cta-btn">Agendar cita</a>
     </div>
     <button class="menu-toggle" id="menuToggle">☰</button>
   </div>
@@ -235,8 +241,8 @@
     <p class="slogan">Un espacio seguro. Un proceso con rumbo.</p>
     <p class="tagline">Terapia cognitivo-conductual con mindfulness para adultos que viven con TDAH, TLP, TOC, ansiedad, depresión, trastornos adaptativos o dificultades de pareja. Presencial y virtual, en español e inglés.</p>
     <div class="hero-cta">
-      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-primary">Agendar primera sesión</a>
-      <a href="#blog" class="btn-secondary">Leer el blog</a>
+      <a href="https://calendly.com/psicoluisafernandagarces/30min" target="_blank" rel="noopener" class="btn-primary">Agendar primera sesión</a>
+      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-secondary">Escribir por WhatsApp</a>
     </div>
     <div class="hero-facts">
       <span>🔒 Confidencialidad total</span>
@@ -361,8 +367,8 @@
       </div>
       <div class="step">
         <div class="num">2</div>
-        <h4>Completas el formulario</h4>
-        <p>Un breve formulario confidencial que me ayuda a preparar tu primera sesión. Solo toma 5 minutos.</p>
+        <h4>Agendas tu horario</h4>
+        <p>Eliges el día y la hora que mejor te quede directamente en el calendario en línea, o lo coordinamos por WhatsApp.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
@@ -491,7 +497,8 @@
     <h2>El primer paso es el más importante</h2>
     <p>No tienes que tener todo claro para empezar. Solo necesitas querer algo diferente. Estoy aquí.</p>
     <div class="hero-cta">
-      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-primary">Escríbeme por WhatsApp</a>
+      <a href="https://calendly.com/psicoluisafernandagarces/30min" target="_blank" rel="noopener" class="btn-primary">Agendar en línea</a>
+      <a href="https://wa.me/573246381485?text=Hola%20Luisa%2C%20quisiera%20agendar%20una%20primera%20consulta" class="btn-secondary" style="background:transparent;color:#fff;border-color:rgba(255,255,255,0.3);">Escríbeme por WhatsApp</a>
     </div>
   </div>
 </section>
