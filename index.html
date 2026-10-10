@@ -95,10 +95,11 @@
 
   /* DIFERENCIADORES — lista, sin cajas */
   .diff-list{display:flex;flex-direction:column;}
-  .diff-item{border-top:1px solid var(--linea);padding:30px 0;display:grid;grid-template-columns:0.4fr 0.6fr;gap:30px;}
-  @media (max-width:700px){.diff-item{grid-template-columns:1fr;gap:10px;}}
+  .diff-item{border-top:1px solid var(--linea);padding:36px 0;display:grid;grid-template-columns:0.34fr 0.66fr;gap:64px;align-items:start;}
+  .diff-item > p,.diff-item > div{max-width:640px;}
+  @media (max-width:760px){.diff-item{grid-template-columns:1fr;gap:12px;padding:28px 0;}}
   .diff-item:last-child{border-bottom:1px solid var(--linea);}
-  .diff-item h4{font-family:var(--font-titulos);font-size:1.02rem;color:var(--cafe);font-weight:500;line-height:1.4;}
+  .diff-item h4{font-family:var(--font-titulos);font-size:1.15rem;color:var(--cafe);font-weight:500;line-height:1.4;}
   .diff-item p{font-size:0.95rem;color:var(--gris-texto);}
 
   /* ESPECIALIDADES — lista tipográfica, no tarjetas */
@@ -234,7 +235,7 @@
 </section>
 
 <section id="diferenciadores">
-  <div class="container-narrow">
+  <div class="container">
     <div class="section-head">
       <div class="kicker">En mis propias palabras</div>
       <h2 class="section-title">¿Qué es distinto en mi forma de trabajar?</h2>
